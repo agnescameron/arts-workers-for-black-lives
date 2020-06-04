@@ -16,7 +16,9 @@ async function getSignatures() {
     	return response.json();
   	})
   	.then((data) => {
-    	console.log(data);
+  		data.values.forEach(function(entry, index){
+  			if(index>1) $('#signatures').append('<li>' + entry[3] + ', '+ entry[4] + '</li>')
+  		})
   });
 }
 
