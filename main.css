@@ -1,6 +1,7 @@
 body {
 	font-family: helvetica;
 	padding: 20px;
+	line-height: 1.2;
 }
 
 article {
@@ -13,5 +14,5 @@ list-style: none;
 }
 
 li {
-	margin-top: 5px;
+	margin-top: 10px;
 }
