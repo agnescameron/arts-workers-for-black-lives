@@ -4,24 +4,7 @@ const API_KEY = 'AIzaSyAAJmPBmK_swAApb1KQQxEPrkbShAMKc-0';
 
 async function getSignatures() {
 	const sheetId = "1Rrj7PQjQcTzeprdGb9d6vBIltiWilACRg7NR411uL_0";
-	const sheetUrl = `https://sheets.googleapis.com/v4/spreadsheets/` + sheetId + '/?key=' + API_KEY;
-
-	// $.ajaxSetup({
-	//   headers : {
-	//     `Authorization: Bearer AIzaSyAAJmPBmK_swAApb1KQQxEPrkbShAMKc-0`,
-	//     'Accept: application/json'
-	//   }
-	// });
-	// $.getJSON(sheetUrl, function(data){
-	// 	var entry = data.feed.entry;
-	// 	console.log('got where')
-	// 	console.log('entry is', entry)
-	// 	 $(entry).each(function(){
-	// 	 	console.log(entry)
-	// 	});
-	// });
-
-
+	const sheetUrl = `https://sheets.googleapis.com/v4/spreadsheets/` + sheetId + '/values/A1:F1000?key=' + API_KEY;
 
 	fetch(sheetUrl, { 
 	   method: 'get', 
@@ -32,8 +15,8 @@ async function getSignatures() {
 	.then((response) => {
     	return response.json();
   	})
-  	.then((myJson) => {
-    	console.log(myJson);
+  	.then((data) => {
+    	console.log(data);
   });
 }
 
