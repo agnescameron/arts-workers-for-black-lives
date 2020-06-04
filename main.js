@@ -17,7 +17,7 @@ async function getSignatures() {
   	})
   	.then((data) => {
   		data.values.forEach(function(entry, index){
-  			if(index>1) $('#signatures').append('<li>' + entry[3] + ', '+ entry[4] + '</li>')
+  			if(index>1) $('#signatures').append('<li><b>' + entry[3] + '</b>, '+ entry[4] + '</li>')
   		})
   });
 }
@@ -26,7 +26,5 @@ $(document).ready(function() {
 
 	//get signatures from google sheets
 	getSignatures();
-
-	//anything else?
 
 })
