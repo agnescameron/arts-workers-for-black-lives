@@ -30,6 +30,7 @@ header > img {
 }
 
 .translate {
+	top: 20px;
 	left: 575px;
 	position: absolute;
 }
