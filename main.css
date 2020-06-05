@@ -12,12 +12,16 @@ article {
 }
 
 ul {
-list-style: none;
-margin-bottom: 50px;
+	list-style: none;
+	margin-bottom: 50px;
 }
 
 li {
 	margin-top: 10px;
+}
+
+h3 {
+	margin-top: 30px;
 }
 
 header > img {
