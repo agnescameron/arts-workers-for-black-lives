@@ -4,7 +4,7 @@ const API_KEY = 'AIzaSyAAJmPBmK_swAApb1KQQxEPrkbShAMKc-0';
 
 async function getSignatures() {
 	const sheetId = "1Rrj7PQjQcTzeprdGb9d6vBIltiWilACRg7NR411uL_0";
-	const sheetUrl = `https://sheets.googleapis.com/v4/spreadsheets/` + sheetId + '/values/A1:F2000?key=' + API_KEY;
+	const sheetUrl = `https://sheets.googleapis.com/v4/spreadsheets/` + sheetId + '/values/A1:F100000?key=' + API_KEY;
 
 	fetch(sheetUrl, { 
 	   method: 'get', 
