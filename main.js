@@ -17,6 +17,7 @@ async function getSignatures() {
   	})
   	.then((data) => {
   		console.log('there are currently', data.values.length, 'signatures')
+  		$('#numSignatures').text(data.values.length);
   		data.values.forEach(function(entry, index){
   			if(index>1) $('#signatures').append('<li><b>' + entry[3] + '</b>, '+ entry[4] + '</li>')
   		})
