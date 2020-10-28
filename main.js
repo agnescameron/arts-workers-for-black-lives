@@ -1,5 +1,5 @@
 const CLIENT_ID = '331468200564-j86jcspdj1qbk5ier7chbhj9cgali3v1.apps.googleusercontent.com';
-const API_KEY = 'AIzaSyAAJmPBmK_swAApb1KQQxEPrkbShAMKc-0';
+const API_KEY = ENV_API_KEY;
 
 
 async function getSignatures() {
